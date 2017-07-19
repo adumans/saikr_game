@@ -56,8 +56,8 @@ print('Train...')
 model.fit([tracex, tracey],
           label,
           batch_size=256,
-          epochs=100,
+          epochs=30,
           validation_split=0.1)
-# score, acc = model.evaluate(tracex)
-# print('Test score:', score)
-# print('Test accuracy:', acc)
+score, acc = model.evaluate([tracex, tracey], label)
+print('Test score:', score)
+print('Test accuracy:', acc)

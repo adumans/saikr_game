@@ -1,0 +1,5 @@
+.idea/
+preprocessing/__init__.pyc
+preprocessing/data_parsing.pyc
+solution/__init__.pyc
+solution/dataman.pyc
