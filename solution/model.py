@@ -58,6 +58,7 @@ model.fit([tracex, tracey],
           batch_size=256,
           epochs=100,
           validation_split=0.1)
-# score, acc = model.evaluate(tracex)
-# print('Test score:', score)
-# print('Test accuracy:', acc)
+score, acc = model.evaluate([tracex, tracey], label ,batch_size=32)
+print('model:', model.summary())
+print('Test score:', score)
+print('Test accuracy:', acc)
